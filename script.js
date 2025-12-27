@@ -115,10 +115,10 @@ stayBtn.addEventListener("click", () => {
 
     let message = "";
     if (playerSum > 21) message = "You Busted!";
-    else if (dealerSum > 21) message = "Dealer Busted! You Win!";
+    else if (dealerSum > 21) message = "Arnas Busted! You Win!";
     else if (playerSum === dealerSum) message = "Tie!";
     else if (playerSum > dealerSum) message = "You Win!";
-    else message = "Dealer Wins!";
+    else message = "Arnas Wins!";
 
     endGame(message);
 });
@@ -133,4 +133,5 @@ function endGame(msg) {
 
 resetBtn.addEventListener("click", () => {
     location.reload(); // Simple way to reset state
+
 });
